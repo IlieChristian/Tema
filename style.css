@@ -1,0 +1,206 @@
+* { 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+span {
+    background: rgb(211, 211, 212);
+    padding: 8px;
+    margin: 2px;
+    display: flex;
+    border-radius: 3px;
+}
+
+label {
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+input{
+    height: 25px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+input[type=text]:focus, input[type=tel]:focus, input[type=checkbox]:focus {
+    outline: none;
+}
+
+input[type=checkbox] {
+    width: 40px;
+}
+
+fieldset {
+    border: 3px solid gray;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.inline-text {
+    width: 200px;
+}
+
+.container {
+    width: 1100px;
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.logo {
+    width: 280px;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 35px 10px;
+}
+
+.titlecontainer {
+    width: 50%;
+    padding: 15px 15px 10px;;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.yearbox {
+    display: inline-flex; 
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 5px;
+    align-items: center;
+}
+
+.year {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.yeartable {
+    border-collapse: collapse;
+}
+
+.yeartable td {
+    border: 1px solid black;
+    padding: 2px; 
+    width: 20px;
+}
+
+.number {
+    font-size: 100px;
+}
+
+.personalinfo, .tax {
+    display: flex;
+    text-align: start;
+    padding: 10px;
+    width: 100%;
+}
+
+.fieldtitle {
+    text-align: start;
+    background: linear-gradient(to right , gray, white);
+    margin-top: 5px;
+}
+
+.personalinfocontainer1 {
+    width: 60%;
+}
+
+.box {
+    display: flex;
+}
+
+.boxnume {
+    width: 80%;
+}
+
+.boxinit {
+    width: 20%;
+}
+
+.init {
+    height: 20px;
+    line-height: 0.8;
+    margin-top: -2px;
+}
+
+.boxbl, .boxsc, .boxet, .boxap {
+    width: 20%;
+}
+
+.boxlc {
+    width: 70%;
+}
+
+.boxcp {
+    width: 30%;
+}
+
+.personalinfocontainer2 {
+    width: 40%;
+}
+
+.cnp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cnptable {
+    border-collapse: collapse;
+    margin-left: 5px;
+}
+
+.cnptable td {
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.personalinfocontainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dashed { 
+    border-bottom: 3px dashed gray;
+    width: 100%;
+    margin: 140px -10px 10px; 
+    position: absolute;
+}
+
+h3 {
+    width: 150px;
+}
+
+.stock {
+    display: flex;
+    width: 100%;
+}
+
+.boxnr1 {
+    width: 40%;
+}
+
+.boxnr2 {
+    width: 60%;
+}
+
+.boxnr2 span input {
+    height: 40px;
+}
