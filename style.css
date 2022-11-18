@@ -1,206 +1,157 @@
-* { 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
+
+:root {
+    --bg-color: #0e0e0e;
+    --personal: #d0d1d4;
+    --personal-bg: #343a46;
+    --boxTitle: #20242e;
+    --progress: #ffffff;
+    --title: #20242e;
+    --line: #d7d7d7;
+}
+
+* {
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
 }
 
-span {
-    background: rgb(211, 211, 212);
-    padding: 8px;
-    margin: 2px;
-    display: flex;
-    border-radius: 3px;
-}
-
-label {
-    margin-right: 5px;
-    font-size: 17px;
-}
-
-input{
-    height: 25px;
-    border: none;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 2px;
-    padding: 0 5px;
-}
-
-input[type=text]:focus, input[type=tel]:focus, input[type=checkbox]:focus {
-    outline: none;
-}
-
-input[type=checkbox] {
-    width: 40px;
-}
-
-fieldset {
-    border: 3px solid gray;
-}
-
-body {
-    font-family: 'Roboto Condensed', sans-serif;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.inline-text {
-    width: 200px;
+body{
+    font-family: 'Lato', sans-serif;
+    background: var(--bg-color);
 }
 
 .container {
-    width: 1100px;
-}
-
-.header {
     display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-around;
-    height: 200px;
+    max-width: 1000px;;
+    margin: 0 auto;
 }
 
-.logo {
-    width: 280px;
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 35px 10px;
-}
-
-.titlecontainer {
-    width: 50%;
-    padding: 15px 15px 10px;;
+.personalContainer{
+    color: var(--personal);
+    background: var(--personal-bg);
+    padding: 15px;
+    width: 400px;
 }
 
 .title {
-    font-size: 18px;
+    margin-bottom: 8px;
+    font-size: 32px;
+    line-height: 38px;
 }
 
-.yearbox {
-    display: inline-flex; 
-    margin-top: 20px;
-    font-size: 18px;
-    padding: 5px;
-    align-items: center;
+.jobTitle {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: normal;
 }
 
-.year {
+.boxTitle {
+    background: var(--boxTitle);
+    margin: 0 -15px;
+    padding: 8px 15px;
+    font-size: 15px;
+}
+
+.personalInfo, .additionalSkills, .languages {
+    margin-bottom: 15px;
+}
+
+.personalInfoBox {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.personalInfoBoxTitle {
+    margin-bottom: 10px;
     font-weight: bold;
-    margin-right: 10px;
+    font-size: 14px;
 }
 
-.yeartable {
-    border-collapse: collapse;
-}
-
-.yeartable td {
-    border: 1px solid black;
-    padding: 2px; 
-    width: 20px;
-}
-
-.number {
-    font-size: 100px;
-}
-
-.personalinfo, .tax {
-    display: flex;
-    text-align: start;
-    padding: 10px;
-    width: 100%;
-}
-
-.fieldtitle {
-    text-align: start;
-    background: linear-gradient(to right , gray, white);
-    margin-top: 5px;
-}
-
-.personalinfocontainer1 {
-    width: 60%;
-}
-
-.box {
-    display: flex;
-}
-
-.boxnume {
-    width: 80%;
-}
-
-.boxinit {
-    width: 20%;
-}
-
-.init {
-    height: 20px;
-    line-height: 0.8;
-    margin-top: -2px;
-}
-
-.boxbl, .boxsc, .boxet, .boxap {
-    width: 20%;
-}
-
-.boxlc {
-    width: 70%;
-}
-
-.boxcp {
-    width: 30%;
-}
-
-.personalinfocontainer2 {
-    width: 40%;
-}
-
-.cnp {
+.additionalSkillsBox, .languagesBox {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    font-size: 14px;
+    margin: 15px 0;
 }
 
-.cnptable {
-    border-collapse: collapse;
-    margin-left: 5px;
-}
-
-.cnptable td {
-    border: 1px solid black;
-    padding: 7px;
-}
-
-.personalinfocontainer2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.dashed { 
-    border-bottom: 3px dashed gray;
+progress {
     width: 100%;
-    margin: 140px -10px 10px; 
-    position: absolute;
+    height: 8px;
+    border-radius: 0px;
+    margin: 8px 0;
 }
 
-h3 {
+progress::-webkit-progress-value {
+    background: var(--progress);
+}
+  
+progress::-webkit-progress-bar {
+    background: var(--boxTitle);
+}
+
+span {
+    float: right;
+}
+
+.aditionalContainer {
+    color: var(--title);
+    background: #fff;
+    padding: 15px;
+}
+
+.aditionalContainerTitle {
+    font-weight: bold;
+}
+
+.line {
+    margin: 8px 0;
+    width: 100%;
+    height: 2px;
+    background: var(--line);
+}
+
+.skills, .experience {
+    margin-bottom: 20px;
+}
+
+.aditionalBoxTitle {
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-position: outside;
+}
+
+li {
+    margin-bottom: 10px;
+    color: var(--title);
+    font-size: 15px;
+}
+
+.intervalsBox {
+    display: flex;
+    margin: 15px 0;
+}
+
+.intervals {
     width: 150px;
+    line-height: 25px;
+    font-size: 15px;
 }
 
-.stock {
-    display: flex;
+.intervalsDetails {
     width: 100%;
 }
 
-.boxnr1 {
-    width: 40%;
+.intervalsDetailsTitle {
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
-.boxnr2 {
-    width: 60%;
-}
-
-.boxnr2 span input {
-    height: 40px;
+.intervalsDetailsSubtitle {
+    font-style: italic;
+    margin-bottom: 8px;
 }
